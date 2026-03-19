@@ -1,0 +1,63 @@
+{
+  "skill_name": "technical-audit",
+  "version": "1.1.0",
+  "evals": [
+    {
+      "id": 1,
+      "description": "标准技术审计",
+      "prompt": "请对 https://example.com 进行技术 SEO 审计，这是一个企业官网",
+      "expectations": [
+        "输出了完整的技术 SEO 审计报告格式",
+        "包含执行摘要，列出了紧急问题/优化建议/最佳实践数量",
+        "检查了 robots.txt 状态",
+        "检查了 sitemap 配置",
+        "检查了 HTTPS 完整性",
+        "检查了移动端适配",
+        "提供了 Core Web Vitals 评估参考",
+        "问题按 P0/P1/P2 优先级分类",
+        "每个问题包含影响、发现、修复方案、预估工时",
+        "提供了 30/60/90 天修复路线图"
+      ]
+    },
+    {
+      "id": 2,
+      "description": "快速审计模式",
+      "prompt": "快速检查一下 example.com 的索引问题，用户反馈页面没有被收录",
+      "expectations": [
+        "识别为 quick 审计模式",
+        "重点检查可索引性问题（robots/sitemap/HTTPS/noindex）",
+        "提供了索引相关的诊断建议",
+        "审计深度标注为 quick"
+      ]
+    },
+    {
+      "id": 3,
+      "description": "信息不完整时的询问",
+      "prompt": "帮我查一下网站的技术问题",
+      "expectations": [
+        "识别出缺少目标网站 URL",
+        "向用户询问目标网站 URL",
+        "没有直接开始审计"
+      ]
+    },
+    {
+      "id": 4,
+      "description": "触发准确性测试 — 应触发",
+      "prompt": "为什么我的页面没有被 Google 收录",
+      "expectations": [
+        "正确触发 technical-audit Skill",
+        "开始询问 URL 或进行索引问题诊断"
+      ]
+    },
+    {
+      "id": 5,
+      "description": "触发准确性测试 — 不应触发",
+      "prompt": "帮我写一篇关于技术 SEO 的文章",
+      "expectations": [
+        "识别这是内容创作请求而非技术审计",
+        "不触发 technical-audit Skill",
+        "直接创作文章或询问创作需求"
+      ]
+    }
+  ]
+}

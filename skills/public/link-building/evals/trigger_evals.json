@@ -1,0 +1,16 @@
+{
+  "skill_name": "link-building",
+  "description": "测试触发描述的准确性，确保正确触发且不误触发",
+  "evals": [
+    { "prompt": "帮我分析外链", "should_trigger": true },
+    { "prompt": "怎么获取高质量外链", "should_trigger": true },
+    { "prompt": "竞品的外链来源在哪里", "should_trigger": true },
+    { "prompt": "帮我评估这个外链的质量", "should_trigger": true },
+    { "prompt": "外链建设有什么策略", "should_trigger": true },
+    { "prompt": "怎么做 disavow 文件", "should_trigger": true },
+    { "prompt": "帮我写一篇关于外链建设的文章", "should_trigger": false },
+    { "prompt": "总结一下这篇文章的内容", "should_trigger": false },
+    { "prompt": "优化这篇文章的 SEO", "should_trigger": false },
+    { "prompt": "帮我做关键词研究", "should_trigger": false }
+  ]
+}

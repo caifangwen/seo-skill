@@ -1,0 +1,16 @@
+{
+  "skill_name": "content-optimizer",
+  "description": "测试触发描述的准确性，确保正确触发且不误触发",
+  "evals": [
+    { "prompt": "帮我优化这篇文章的 SEO", "should_trigger": true },
+    { "prompt": "这篇文章的标题怎么改才能让搜索引擎更容易找到", "should_trigger": true },
+    { "prompt": "帮我检查文章的关键词密度是否合适", "should_trigger": true },
+    { "prompt": "给这篇文章加一些 FAQ", "should_trigger": true },
+    { "prompt": "文章的内链应该怎么加", "should_trigger": true },
+    { "prompt": "帮我写一篇新文章", "should_trigger": false },
+    { "prompt": "总结一下这篇文章的主要观点", "should_trigger": false },
+    { "prompt": "把这篇文章翻译成英文", "should_trigger": false },
+    { "prompt": "分析一下这个网站的技术问题", "should_trigger": false },
+    { "prompt": "帮我做关键词研究", "should_trigger": false }
+  ]
+}

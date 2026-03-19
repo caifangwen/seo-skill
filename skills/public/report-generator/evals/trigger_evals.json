@@ -1,0 +1,16 @@
+{
+  "skill_name": "report-generator",
+  "description": "测试触发描述的准确性，确保正确触发且不误触发",
+  "evals": [
+    { "prompt": "帮我生成 SEO 月报", "should_trigger": true },
+    { "prompt": "整理一下这个季度的 SEO 数据成报告", "should_trigger": true },
+    { "prompt": "帮我做一份 SEO 绩效汇报材料", "should_trigger": true },
+    { "prompt": "生成竞品分析报告", "should_trigger": true },
+    { "prompt": "流量下降了，帮我写个诊断报告", "should_trigger": true },
+    { "prompt": "帮我写一篇关于 SEO 的文章", "should_trigger": false },
+    { "prompt": "优化这篇文章的 SEO", "should_trigger": false },
+    { "prompt": "帮我做关键词研究", "should_trigger": false },
+    { "prompt": "检查网站的技术问题", "should_trigger": false },
+    { "prompt": "总结一下这篇文章", "should_trigger": false }
+  ]
+}

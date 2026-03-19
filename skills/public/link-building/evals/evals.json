@@ -1,0 +1,61 @@
+{
+  "skill_name": "link-building",
+  "version": "1.0.5",
+  "evals": [
+    {
+      "id": 1,
+      "description": "标准外链分析",
+      "prompt": "请帮我分析 https://example.com 的外链建设策略，主要竞品是 competitor1.com 和 competitor2.com",
+      "expectations": [
+        "输出了完整的外链建设策略报告格式",
+        "包含执行摘要，列出了外链机会数量和优先行动项",
+        "提供了竞品外链对比表格",
+        "使用了外链质量评估标准（域名权威度/相关性/流量质量/外链自然度/内容质量）",
+        "外链机会清单包含类型/价值/难度/优先级字段",
+        "提供了 30 天行动计划",
+        "提供了 outreach 模板参考"
+      ]
+    },
+    {
+      "id": 2,
+      "description": "外链质量评估",
+      "prompt": "帮我评估这几个外链机会的质量：example1.com, example2.com, example3.com",
+      "expectations": [
+        "对每个网站都进行了评估",
+        "使用了 100 分制评分系统",
+        "给出了综合评级（A/B/C/D）",
+        "提供了是否建议获取的结论"
+      ]
+    },
+    {
+      "id": 3,
+      "description": "信息不完整时的询问",
+      "prompt": "帮我分析一下外链",
+      "expectations": [
+        "识别出缺少目标网站 URL",
+        "向用户询问目标网站 URL",
+        "向用户询问竞品网站",
+        "没有直接开始分析"
+      ]
+    },
+    {
+      "id": 4,
+      "description": "触发准确性测试 — 应触发",
+      "prompt": "怎么获取高质量外链",
+      "expectations": [
+        "正确触发 link-building Skill",
+        "开始询问目标网站或提供外链建设策略"
+      ]
+    },
+    {
+      "id": 5,
+      "description": "触发准确性测试 — 不应触发",
+      "prompt": "帮我写一篇关于外链建设的文章",
+      "expectations": [
+        "识别这是内容创作请求而非外链分析",
+        "不触发 link-building Skill",
+        "直接创作文章或询问创作需求"
+      ]
+    }
+  ]
+}

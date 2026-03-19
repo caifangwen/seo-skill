@@ -1,0 +1,16 @@
+{
+  "skill_name": "technical-audit",
+  "description": "测试触发描述的准确性，确保正确触发且不误触发",
+  "evals": [
+    { "prompt": "帮我查一下网站的技术 SEO 问题", "should_trigger": true },
+    { "prompt": "为什么我的页面没有被收录", "should_trigger": true },
+    { "prompt": "检查一下 robots.txt 配置", "should_trigger": true },
+    { "prompt": "网站速度很慢，帮我看看", "should_trigger": true },
+    { "prompt": "Core Web Vitals 不达标怎么办", "should_trigger": true },
+    { "prompt": "sitemap 怎么验证是否有效", "should_trigger": true },
+    { "prompt": "帮我写一篇关于技术 SEO 的文章", "should_trigger": false },
+    { "prompt": "总结一下这篇文章的内容", "should_trigger": false },
+    { "prompt": "优化这篇文章的 SEO", "should_trigger": false },
+    { "prompt": "帮我做关键词研究", "should_trigger": false }
+  ]
+}
