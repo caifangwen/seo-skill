@@ -1,11 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>My Skill Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Skill 仓库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 1.5rem;
+        }
+
+        .card h3 {
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .card-meta {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            color: #666;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Skill 仓库部署成功！</h1>
-    <p>这是独立于主站点的二级目录页面。</p>
-    <a href="https://你的用户名.github.io/">返回主站 Hugo 博客</a>
+    <div class="container">
+        <header>
+            <h1>🚀 SEO Skill 仓库</h1>
+            <p>专业的搜索引擎优化技能集合，助力内容排名提升</p>
+        </header>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">📝</div>
+                <h3>文章优化</h3>
+                <p>自动分析文章内容，生成 SEO 友好的标题、描述和关键词，提升搜索排名。</p>
+                <div class="card-meta">
+                    <span class="tag">SEO</span>
+                    <span class="tag">内容优化</span>
+                    <span class="tag">自动化工具</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔍</div>
+                <h3>关键词研究</h3>
+                <p>深度挖掘高价值关键词，分析竞争度和搜索意图，制定精准关键词策略。</p>
+                <div class="card-meta">
+                    <span class="tag">关键词</span>
+                    <span class="tag">市场分析</span>
+                    <span class="tag">竞争分析</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>数据监控</h3>
+                <p>实时追踪网站 SEO 表现，监控排名变化，生成可视化数据报告。</p>
+                <div class="card-meta">
+                    <span class="tag">数据分析</span>
+                    <span class="tag">排名追踪</span>
+                    <span class="tag">报告生成</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔗</div>
+                <h3>外链建设</h3>
+                <p>智能识别高质量外链机会，自动化 outreach 流程，提升域名权威度。</p>
+                <div class="card-meta">
+                    <span class="tag">外链</span>
+                    <span class="tag">域名权威</span>
+                    <span class="tag">自动化</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>技术 SEO</h3>
+                <p>网站结构优化、速度优化、移动适配，确保搜索引擎友好。</p>
+                <div class="card-meta">
+                    <span class="tag">技术优化</span>
+                    <span class="tag">性能优化</span>
+                    <span class="tag">移动端</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📈</div>
+                <h3>竞争分析</h3>
+                <p>深度分析竞争对手 SEO 策略，发现差距和机会，制定超越计划。</p>
+                <div class="card-meta">
+                    <span class="tag">竞品分析</span>
+                    <span class="tag">策略制定</span>
+                    <span class="tag">市场洞察</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 SEO Skill 仓库 | <a href="https://github.com/your-username/seo-skill">GitHub</a></p>
+        </footer>
+    </div>
 </body>
 </html>
