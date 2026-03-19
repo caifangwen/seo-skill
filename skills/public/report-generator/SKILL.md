@@ -1,8 +1,8 @@
 ---
 name: report-generator
-version: "1.0.2"
+version: "1.1.0"
 description: |
-  生成专业的 SEO 分析报告（Markdown 或 Word 格式）。
+  生成专业的 SEO 分析报告（Markdown、Hugo 或 Word 格式）。
   当用户提到生成 SEO 月报、季报、年报、竞品分析报告、
   流量分析、关键词排名报告、SEO 复盘时必须触发此技能。
   用户提供数据并说"帮我整理成报告"或"生成汇报材料"也应触发。
@@ -199,3 +199,209 @@ compatibility:
 ### 数据说明
 [数据统计口径说明]
 ```
+
+---
+
+## Hugo 格式报告规范
+
+### 适用场景
+
+当用户要求输出到 `output/` 文件夹或明确指定"Hugo 格式"时使用此规范。
+
+### Front Matter 结构
+
+```yaml
+---
+title: "[报告标题]"
+date: YYYY-MM-DDTHH:MM:SS+00:00
+draft: false
+type: "[报告类型]"
+categories:
+  - "[分类 1]"
+  - "[分类 2]"
+tags:
+  - "[标签 1]"
+  - "[标签 2]"
+params:
+  [自定义参数]
+summary:
+  [摘要数据]
+---
+```
+
+### Front Matter 参数说明
+
+| 字段 | 必填 | 说明 | 示例 |
+|------|------|------|------|
+| `title` | ✅ | 报告标题 | `"e-huahao.com SEO 综合审计报告"` |
+| `date` | ✅ | ISO 8601 格式日期 | `2026-03-20T12:00:00+00:00` |
+| `draft` | ✅ | 是否为草稿 | `false` |
+| `type` | ✅ | 内容类型 | `"seo-audit-report"` |
+| `categories` | ✅ | 分类列表 | `["SEO Audit", "Technical SEO"]` |
+| `tags` | ✅ | 标签列表 | `["e-huahao", "B2B", "Nonwoven Bags"]` |
+| `params.client` | ✅ | 客户网站 | `"e-huahao.com"` |
+| `params.auditDate` | ✅ | 审计日期 | `"2026-03-20"` |
+| `params.reportType` | ✅ | 报告类型 | `"Comprehensive SEO Audit"` |
+| `params.targetMarket` | ⚠️ | 目标市场（如适用） | `"North America (USA/Canada)"` |
+| `params.nextReview` | ⚠️ | 下次审查日期 | `"2026-06-20"` |
+| `summary.*` | ✅ | 摘要数据 | 见下方示例 |
+
+### 摘要数据示例
+
+```yaml
+summary:
+  technicalScore: 72
+  contentScore: 65
+  keywordOpportunity: 180
+  priorityActions: 12
+```
+
+### Hugo Shortcode 占位符
+
+在报告正文中使用以下 shortcode 占位符，便于 Hugo 主题渲染：
+
+| Shortcode | 位置 | 说明 |
+|-----------|------|------|
+| `{{< report-meta >}}` | 执行摘要前 | 渲染报告元数据表格 |
+| `{{< executive-summary >}}` | 执行摘要章节 | 渲染执行摘要框 |
+| `{{< audit-summary >}}` | 审计摘要 | 渲染问题统计表格 |
+| `{{< keyword-meta >}}` | 关键词报告 | 渲染关键词研究元数据 |
+| `{{< research-summary >}}` | 关键词摘要 | 渲染关键词统计 |
+| `{{< report-footer >}}` | 报告末尾 | 渲染报告页脚 |
+
+### 报告结构模板
+
+```markdown
+# [报告标题]
+
+{{< report-meta >}}
+
+| 项目 | 详情 |
+|------|------|
+| **客户网站** | [URL] |
+| **报告类型** | [类型] |
+| **审计日期** | [日期] |
+| **目标市场** | [市场] |
+| **下次审查** | [日期] |
+
+---
+
+## 执行摘要
+
+{{< executive-summary >}}
+
+### 整体评分
+
+| 维度 | 得分 | 等级 |
+|------|------|------|
+| 技术 SEO | **XX/100** | 🟡 等级 |
+| 内容质量 | **XX/100** | 🟡 等级 |
+| 关键词机会 | **XX 个** | 🟢 等级 |
+
+### 核心发现
+
+| 类别 | 数量 | 说明 |
+|------|------|------|
+| 🔴 紧急问题 | **X** | 说明 |
+| 🟡 优化建议 | **X** | 说明 |
+| 🟢 已通过 | **X** | 说明 |
+
+### 本期亮点
+
+- ✅ [亮点 1]
+- ✅ [亮点 2]
+- ✅ [亮点 3]
+
+### 本期关注
+
+- ⚠️ [关注点 1]
+- ⚠️ [关注点 2]
+
+---
+
+## [主体章节]
+
+[按报告类型展开]
+
+---
+
+## 执行路线图
+
+### 第一阶段（第 1-30 天）- [阶段名称]
+
+| 优先级 | 任务 | 负责人 | Deadline | 预期收益 |
+|--------|------|--------|----------|----------|
+| P0 | [任务] | | [日期] | [收益] |
+| P1 | [任务] | | [日期] | [收益] |
+
+**阶段目标**：[目标描述]
+
+---
+
+## 附录
+
+### 工具与资源
+
+| 工具 | 用途 | 链接 |
+|------|------|------|
+| [工具名] | [用途] | [URL] |
+
+---
+
+### 报告生成信息
+
+| 项目 | 详情 |
+|------|------|
+| **报告生成** | [Skill 名称] v[版本] |
+| **输出路径** | `/output/[文件名].md` |
+| **报告格式** | Hugo Markdown |
+| **保密级别** | [级别] |
+
+---
+
+**报告版本**：v1.0  
+**生成日期**：YYYY-MM-DD  
+**下次更新**：YYYY-MM-DD
+
+---
+
+{{< report-footer >}}
+```
+
+### 输出文件命名规范
+
+| 报告类型 | 命名格式 | 示例 |
+|----------|----------|------|
+| 技术审计 | `[domain]-technical-audit.md` | `e-huahao-technical-audit.md` |
+| 关键词研究 | `[domain]-keyword-research.md` | `e-huahao-keyword-research.md` |
+| 综合审计 | `[domain]-comprehensive-audit.md` | `e-huahao-comprehensive-audit.md` |
+| 月度报告 | `[domain]-seo-report-[YYYY-MM].md` | `e-huahao-seo-report-2026-03.md` |
+| 竞品分析 | `[domain]-vs-[competitor]-analysis.md` | `e-huahao-vs-novolex-analysis.md` |
+
+### 输出目录
+
+所有 Hugo 格式报告输出到：`/output/`
+
+### 状态图标规范
+
+| 图标 | 含义 | 使用场景 |
+|------|------|----------|
+| ✅ | 通过/已完成 | 已符合最佳实践 |
+| ⚠️ | 警告/需注意 | 优化建议 |
+| 🔴 | 紧急/错误 | 紧急修复项 |
+| 🟢 | 良好/机会 | 优势或机会 |
+| 🟡 | 中等/一般 | 中等优先级 |
+| 📈 | 增长/提升 | KPI 目标 |
+
+### 质量检查清单
+
+生成报告前检查：
+
+- [ ] Front Matter 完整（title, date, type, categories, tags, params）
+- [ ] 日期格式为 ISO 8601
+- [ ] 包含执行摘要和核心发现
+- [ ] 问题按优先级分类（P0/P1/P2）
+- [ ] 包含执行路线图（30/60/90 天）
+- [ ] 包含 KPI 目标
+- [ ] 输出路径正确（`/output/`）
+- [ ] 文件命名符合规范

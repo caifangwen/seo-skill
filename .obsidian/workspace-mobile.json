@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "output/e-huahao-keyword-research.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "e-huahao-keyword-research"
             }
           }
         ]
@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "README.md",
+            "file": "output/e-huahao-keyword-research.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -170,7 +170,11 @@
   },
   "active": "c3ef8d7d1ac26f42",
   "lastOpenFiles": [
-    "skills/public/content-optimizer/SKILL.md",
-    "README.md"
+    "output/e-huahao-technical-audit.md",
+    "output/e-huahao-comprehensive-audit.md",
+    "output/e-huahao-keyword-research.md",
+    "output/hainersteel-technical-audit.md",
+    "README.md",
+    "skills/public/content-optimizer/SKILL.md"
   ]
 }
