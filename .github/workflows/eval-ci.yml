@@ -119,3 +119,25 @@ jobs:
             echo "验证 $file"
             python -c "import json; json.load(open('$file'))" || exit 1
           done
+  # ... 在你原有的 validate-json 任务之后添加 ...
+
+  deploy-to-pages:
+    name: 部署到 GitHub Pages
+    needs: [trigger-eval, functional-eval, lint, validate-json] # 只有前面四个测试全过，才部署
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.' # 部署整个根目录
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
