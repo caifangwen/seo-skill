@@ -7,7 +7,6 @@
 import argparse
 import json
 import sys
-import os
 from pathlib import Path
 from datetime import datetime
 
@@ -16,17 +15,17 @@ def find_skills(skills_path):
     """查找所有 Skill"""
     skills = []
     skills_dir = Path(skills_path)
-    
+
     if not skills_dir.exists():
         print(f"❌ 目录不存在：{skills_path}")
         return skills
-    
+
     for skill_dir in skills_dir.iterdir():
         if skill_dir.is_dir():
             skill_file = skill_dir / "SKILL.md"
             eval_file = skill_dir / "evals" / "evals.json"
             trigger_eval_file = skill_dir / "evals" / "trigger_evals.json"
-            
+
             if skill_file.exists():
                 skills.append({
                     'name': skill_dir.name,
@@ -35,7 +34,7 @@ def find_skills(skills_path):
                     'eval_file': str(eval_file) if eval_file.exists() else None,
                     'trigger_eval_file': str(trigger_eval_file) if trigger_eval_file.exists() else None
                 })
-    
+
     return skills
 
 
@@ -53,11 +52,11 @@ def run_trigger_evals(skill_name, eval_data):
     """执行触发准确性测试"""
     evals = eval_data.get('evals', [])
     results = []
-    
+
     for eval_case in evals:
         prompt = eval_case.get('prompt', '')
         should_trigger = eval_case.get('should_trigger', None)
-        
+
         # 模拟测试结果
         result = {
             'prompt': prompt,
@@ -66,7 +65,7 @@ def run_trigger_evals(skill_name, eval_data):
             'status': 'pending'
         }
         results.append(result)
-    
+
     return results
 
 
@@ -76,23 +75,23 @@ def run_all_evals(skills, verbose=False):
         'timestamp': datetime.now().isoformat(),
         'skills': []
     }
-    
+
     for skill in skills:
         print(f"\n{'='*60}")
         print(f"Skill: {skill['name']}")
         print(f"路径：{skill['path']}")
         print(f"{'='*60}")
-        
+
         skill_result = {
             'name': skill['name'],
             'path': skill['path'],
             'functional_evals': [],
             'trigger_evals': []
         }
-        
+
         # 功能测试
         if skill['eval_file']:
-            print(f"\n📋 功能测试:")
+            print("\n📋 功能测试:")
             eval_data = load_evals(skill['eval_file'])
             if eval_data:
                 evals = eval_data.get('evals', [])
@@ -106,10 +105,10 @@ def run_all_evals(skills, verbose=False):
                     skill_result['functional_evals'].append(eval_result)
                     if verbose:
                         print(f"   - {eval_case.get('description', 'N/A')}")
-        
+
         # 触发测试
         if skill['trigger_eval_file']:
-            print(f"\n📋 触发准确性测试:")
+            print("\n📋 触发准确性测试:")
             eval_data = load_evals(skill['trigger_eval_file'])
             if eval_data:
                 evals = eval_data.get('evals', [])
@@ -120,28 +119,28 @@ def run_all_evals(skills, verbose=False):
                     for r in trigger_results:
                         trigger_status = "应触发" if r['should_trigger'] else "不应触发"
                         print(f"   - [{trigger_status}] {r['prompt'][:50]}...")
-        
+
         all_results['skills'].append(skill_result)
-    
+
     return all_results
 
 
 def print_summary(results):
     """打印摘要"""
-    print(f"\n{'='*60}")
+    print("\n" + "="*60)
     print("📊 测试摘要")
-    print(f"{'='*60}")
-    
+    print("="*60)
+
     total_skills = len(results['skills'])
     total_functional = sum(len(s['functional_evals']) for s in results['skills'])
     total_trigger = sum(len(s['trigger_evals']) for s in results['skills'])
-    
+
     print(f"Skill 数量：{total_skills}")
     print(f"功能测试用例：{total_functional}")
     print(f"触发测试用例：{total_trigger}")
     print(f"总测试用例：{total_functional + total_trigger}")
-    print(f"状态：待执行 (需要 Claude API)")
-    print(f"{'='*60}\n")
+    print("状态：待执行 (需要 Claude API)")
+    print("="*60 + "\n")
 
 
 def main():
@@ -155,33 +154,33 @@ def main():
                         help='详细输出')
     parser.add_argument('--threshold', type=float, default=0.80,
                         help='通过率阈值 (默认：0.80)')
-    
+
     args = parser.parse_args()
-    
+
     # 查找 Skills
     print(f"🔍 查找 Skills: {args.skills_path}")
     skills = find_skills(args.skills_path)
-    
+
     if not skills:
         print("❌ 未找到任何 Skill")
         sys.exit(1)
-    
+
     print(f"✅ 找到 {len(skills)} 个 Skill:")
     for skill in skills:
         print(f"   - {skill['name']}")
-    
+
     # 执行测试
     results = run_all_evals(skills, verbose=args.verbose)
-    
+
     # 打印摘要
     print_summary(results)
-    
+
     # 保存结果
     if args.output:
         with open(args.output, 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
         print(f"📄 结果已保存至：{args.output}")
-    
+
     # Benchmark 模式
     if args.benchmark:
         print("\n📈 Benchmark 模式")
