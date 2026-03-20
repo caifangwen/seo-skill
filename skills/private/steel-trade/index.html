@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钢铁外贸 SEO Skill 体系</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .intro {
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .intro h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .intro ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border-left: 5px solid;
+        }
+
+        .card.keyword { border-left-color: #e74c3c; }
+        .card.content { border-left-color: #3498db; }
+        .card.technical { border-left-color: #9b59b6; }
+        .card.link { border-left-color: #27ae60; }
+        .card.report { border-left-color: #f39c12; }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 1.8rem;
+        }
+
+        .card.keyword .card-icon { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+        .card.content .card-icon { background: linear-gradient(135deg, #3498db, #2980b9); }
+        .card.technical .card-icon { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+        .card.link .card-icon { background: linear-gradient(135deg, #27ae60, #229954); }
+        .card.report .card-icon { background: linear-gradient(135deg, #f39c12, #d68910); }
+
+        .card h3 {
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+
+        .card .en-name {
+            color: #888;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            font-family: monospace;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .card-features {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 16px;
+        }
+
+        .card-features h4 {
+            color: #333;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .card-features ul {
+            margin-left: 16px;
+            color: #666;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .card-meta {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            color: #666;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+
+        .workflow {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .workflow h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .workflow-diagram {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .workflow-step {
+            background: linear-gradient(135deg, #1e3a5f, #2d5a87);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .workflow-arrow {
+            color: #666;
+            font-size: 1.5rem;
+        }
+
+        .target-markets {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 24px;
+        }
+
+        .target-markets h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+        }
+
+        .markets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .market-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .market-card .flag {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .market-card h4 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .market-card p {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow-diagram {
+                flex-direction: column;
+            }
+
+            .workflow-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏭 钢铁外贸 SEO Skill 体系</h1>
+            <p>专为钢铁外贸 B2B 网站设计的领域特定 SEO 技能集合</p>
+            <a href="../../../index.html" class="back-link">← 返回总索引</a>
+        </header>
+
+        <div class="intro">
+            <h2>核心逻辑</h2>
+            <p><strong>"从产品规格关键词到买家询盘"</strong></p>
+            <p style="margin-top: 15px; opacity: 0.9;">钢铁外贸 B2B SEO 的所有技能都围绕这一核心链条展开。流量本身无意义，询盘转化是唯一目标。</p>
+            <h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.1rem;">核心特点</h3>
+            <ul>
+                <li><strong>买家市场特定</strong>：中东、东南亚、非洲、南美（而非欧美）</li>
+                <li><strong>产品规格为核心</strong>：规格 + 标准 + 用途 三要素关键词模型</li>
+                <li><strong>询盘转化为唯一目标</strong>：所有优化围绕询盘展开</li>
+                <li><strong>竞品差异化</strong>：印度、土耳其、韩国钢厂为主要竞品</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <div class="card keyword">
+                <div class="card-icon">🔍</div>
+                <h3>钢铁关键词研究</h3>
+                <div class="en-name">steel-keyword-research</div>
+                <p>基于 Triad 模型（产品类型 + 规格标准 + 使用场景）挖掘高转化意图关键词，聚焦核心买家市场。</p>
+                <div class="card-features">
+                    <h4>核心功能</h4>
+                    <ul>
+                        <li>Triad 模型关键词挖掘</li>
+                        <li>买家国家意图分析</li>
+                        <li>竞品关键词差距分析</li>
+                        <li>规格词提取与分类</li>
+                    </ul>
+                </div>
+                <div class="card-meta">
+                    <span class="tag">关键词研究</span>
+                    <span class="tag">Triad 模型</span>
+                    <span class="tag">买家意图</span>
+                </div>
+            </div>
+
+            <div class="card content">
+                <div class="card-icon">📝</div>
+                <h3>钢铁内容优化</h3>
+                <div class="en-name">steel-content-optimizer</div>
+                <p>基于 15 点诊断框架（12 通用 +3 钢铁特殊），聚焦规格表完整性和询盘转化路径优化。</p>
+                <div class="card-features">
+                    <h4>核心功能</h4>
+                    <ul>
+                        <li>15 点页面诊断</li>
+                        <li>规格表 HTML 优化</li>
+                        <li>Title/Meta 公式</li>
+                        <li>询盘 CTA 优化</li>
+                    </ul>
+                </div>
+                <div class="card-meta">
+                    <span class="tag">内容优化</span>
+                    <span class="tag">15 点诊断</span>
+                    <span class="tag">询盘转化</span>
+                </div>
+            </div>
+
+            <div class="card technical">
+                <div class="card-icon">⚙️</div>
+                <h3>钢铁技术审计</h3>
+                <div class="en-name">steel-technical-audit</div>
+                <p>除通用技术 SEO 外，特别关注多语言配置、询盘表单功能和移动端询盘流程。</p>
+                <div class="card-features">
+                    <h4>核心功能</h4>
+                    <ul>
+                        <li>多语言/hreflang 检查</li>
+                        <li>RFQ 表单功能诊断</li>
+                        <li>移动端询盘流程</li>
+                        <li>产品目录结构</li>
+                    </ul>
+                </div>
+                <div class="card-meta">
+                    <span class="tag">技术 SEO</span>
+                    <span class="tag">多语言</span>
+                    <span class="tag">表单诊断</span>
+                </div>
+            </div>
+
+            <div class="card link">
+                <div class="card-icon">🔗</div>
+                <h3>钢铁外链建设</h3>
+                <div class="en-name">steel-link-building</div>
+                <p>聚焦行业目录、技术内容外链和买家市场本地外链，获取高质量相关性链接。</p>
+                <div class="card-features">
+                    <h4>核心功能</h4>
+                    <ul>
+                        <li>Tier 1/2/3 外链分级</li>
+                        <li>Link Bait 内容策略</li>
+                        <li>行业目录提交</li>
+                        <li>Outreach 模板</li>
+                    </ul>
+                </div>
+                <div class="card-meta">
+                    <span class="tag">外链建设</span>
+                    <span class="tag">行业目录</span>
+                    <span class="tag">Link Bait</span>
+                </div>
+            </div>
+
+            <div class="card report">
+                <div class="card-icon">📊</div>
+                <h3>钢铁报告生成</h3>
+                <div class="en-name">steel-report-generator</div>
+                <p>基于询盘为核心的 KPI 体系（而非流量），生成包含询盘分析、排名、流量的完整报告。</p>
+                <div class="card-features">
+                    <h4>核心功能</h4>
+                    <ul>
+                        <li>询盘分析（核心指标）</li>
+                        <li>关键词排名追踪</li>
+                        <li>流量国家分布</li>
+                        <li>技术 SEO 状态</li>
+                    </ul>
+                </div>
+                <div class="card-meta">
+                    <span class="tag">报告生成</span>
+                    <span class="tag">询盘 KPI</span>
+                    <span class="tag">绩效汇报</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="workflow">
+            <h2>工作流串联</h2>
+            
+            <h3 style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">新产品上线工作流</h3>
+            <div class="workflow-diagram">
+                <div class="workflow-step">🔍 关键词研究</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">📝 内容优化</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">📊 报告追踪</div>
+            </div>
+
+            <h3 style="color: #666; font-size: 0.95rem; margin-bottom: 15px; margin-top: 25px;">网站优化工作流</h3>
+            <div class="workflow-diagram">
+                <div class="workflow-step">⚙️ 技术审计</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">🔍 关键词研究</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">📝 内容优化</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">🔗 外链建设</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">📊 报告生成</div>
+            </div>
+
+            <h3 style="color: #666; font-size: 0.95rem; margin-bottom: 15px; margin-top: 25px;">询盘下降排查工作流</h3>
+            <div class="workflow-diagram">
+                <div class="workflow-step">⚙️ 技术审计</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">📝 内容优化</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">📊 报告分析</div>
+            </div>
+        </div>
+
+        <div class="target-markets">
+            <h2>目标买家市场</h2>
+            <div class="markets-grid">
+                <div class="market-card">
+                    <div class="flag">🇸🇦</div>
+                    <h4>中东</h4>
+                    <p>沙特、阿联酋、卡塔尔</p>
+                    <p style="font-size: 0.75rem; margin-top: 5px;">Vision 2030 基建需求</p>
+                </div>
+                <div class="market-card">
+                    <div class="flag">🇻🇳</div>
+                    <h4>东南亚</h4>
+                    <p>越南、菲律宾、印尼</p>
+                    <p style="font-size: 0.75rem; margin-top: 5px;">制造业转移 + 基建</p>
+                </div>
+                <div class="market-card">
+                    <div class="flag">🇳🇬</div>
+                    <h4>非洲</h4>
+                    <p>尼日利亚、肯尼亚</p>
+                    <p style="font-size: 0.75rem; margin-top: 5px;">价格敏感，基建需求</p>
+                </div>
+                <div class="market-card">
+                    <div class="flag">🇧🇷</div>
+                    <h4>南美</h4>
+                    <p>巴西、智利、秘鲁</p>
+                    <p style="font-size: 0.75rem; margin-top: 5px;">矿业 + 制造业</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 钢铁外贸 SEO Skill 体系 | <a href="../../../index.html">返回总索引</a></p>
+            <p style="margin-top: 10px; font-size: 0.85rem;">版本：v1.0.0 | 最后更新：2026-03-20</p>
+        </footer>
+    </div>
+</body>
+</html>

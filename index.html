@@ -52,12 +52,15 @@
             border-radius: 16px;
             padding: 24px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
         }
 
         .card:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .card[onclick] {
+            cursor: pointer;
         }
 
         .card-icon {
@@ -132,6 +135,17 @@
         </header>
 
         <div class="cards">
+            <div class="card" onclick="location.href='skills/private/steel-trade/index.html'">
+                <div class="card-icon">🏭</div>
+                <h3>钢铁外贸 SEO</h3>
+                <p>专为钢铁外贸 B2B 设计的领域特定 SEO 体系，覆盖关键词研究、内容优化、技术审计、外链建设和报告生成。</p>
+                <div class="card-meta">
+                    <span class="tag">钢铁行业</span>
+                    <span class="tag">B2B 外贸</span>
+                    <span class="tag">询盘转化</span>
+                </div>
+            </div>
+
             <div class="card">
                 <div class="card-icon">📝</div>
                 <h3>文章优化</h3>
