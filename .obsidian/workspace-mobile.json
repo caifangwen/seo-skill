@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "output/e-huahao-keyword-research.md",
+                "file": "output/e-huahao-comprehensive-audit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "e-huahao-keyword-research"
+              "title": "e-huahao-comprehensive-audit"
             }
           }
         ]
@@ -170,9 +170,9 @@
   },
   "active": "c3ef8d7d1ac26f42",
   "lastOpenFiles": [
+    "output/e-huahao-keyword-research.md",
     "output/e-huahao-technical-audit.md",
     "output/e-huahao-comprehensive-audit.md",
-    "output/e-huahao-keyword-research.md",
     "output/hainersteel-technical-audit.md",
     "README.md",
     "skills/public/content-optimizer/SKILL.md"
