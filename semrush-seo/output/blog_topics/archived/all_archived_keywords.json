@@ -1,0 +1,82 @@
+[
+  {
+    "topic": "other",
+    "keyword": "seax",
+    "search_volume": 6600,
+    "difficulty": 20.0,
+    "priority_score": 1653.3,
+    "content_type": "Informational Post",
+    "competitor": "noblie",
+    "archived_at": NaN
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "dagger",
+    "search_volume": 60500,
+    "difficulty": 36.0,
+    "priority_score": 1241.57,
+    "content_type": "Informational Post",
+    "competitor": "noblie",
+    "archived_at": NaN
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "pocket knife",
+    "search_volume": 49500,
+    "difficulty": 41.0,
+    "priority_score": 1164.71,
+    "content_type": "Informational Post",
+    "competitor": "koi",
+    "archived_at": NaN
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "big knife",
+    "search_volume": 3600,
+    "difficulty": 7.0,
+    "priority_score": 787.76,
+    "content_type": "Informational Post",
+    "competitor": "noblie",
+    "archived_at": "20260331_142810"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "meat cleaver",
+    "search_volume": 22200,
+    "difficulty": 33.0,
+    "priority_score": 774.42,
+    "content_type": "Informational Post",
+    "competitor": "koi",
+    "archived_at": "20260331_142810"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "serrated knife",
+    "search_volume": 14800,
+    "difficulty": 29.0,
+    "priority_score": 724.06,
+    "content_type": "Informational Post",
+    "competitor": "noblie",
+    "archived_at": "20260331_142810"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "boot knife",
+    "search_volume": 6600,
+    "difficulty": 23.0,
+    "priority_score": 273.6,
+    "content_type": "Informational Post",
+    "competitor": "noblie",
+    "archived_at": "20260331_143310"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "rainbow lorikeet",
+    "search_volume": 8100,
+    "difficulty": 42.0,
+    "priority_score": 233.65,
+    "content_type": "Comparison",
+    "competitor": "koi",
+    "archived_at": "20260331_143310"
+  }
+]

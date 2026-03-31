@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "9f5acd2a2132e361",
+    "type": "split",
+    "children": [
+      {
+        "id": "6452c9886777a9da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "809b20d61e069419",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "output/leeknives-comprehensive-audit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "leeknives-comprehensive-audit"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1cecb1a967340543",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f64824cfed0d875",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "333cc9a066ac734e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "c9c45878080e2707",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9902fbbdb0287e8f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "479b24f9df7099a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "6822331170bf8205",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "213508ebd12ccae7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "output/leeknives-comprehensive-audit.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "leeknives-comprehensive-audit 的反向链接列表"
+            }
+          },
+          {
+            "id": "6980f941484c8f28",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "output/leeknives-comprehensive-audit.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "leeknives-comprehensive-audit 的出链列表"
+            }
+          },
+          {
+            "id": "8b173019c92501ce",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "0db52a57f2b77029",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "55c82565c380def5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "output/leeknives-comprehensive-audit.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "leeknives-comprehensive-audit 的大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "809b20d61e069419",
+  "lastOpenFiles": [
+    "output/nichedropshipping-technical-audit.md",
+    "output/nichedropshipping-keyword-analysis.md",
+    "output/leeknives-comprehensive-audit.md",
+    "output/hainersteel-valves-com-audit-report.md",
+    "output/hainersteel-comprehensive-seo-report.md",
+    "output/hainersteel-technical-audit.md",
+    "output/nichedropshipping-technical-audit.pdf",
+    "output/leeknives-comprehensive-audit.pdf",
+    "output/e-huahao-keyword-research.md"
+  ]
+}

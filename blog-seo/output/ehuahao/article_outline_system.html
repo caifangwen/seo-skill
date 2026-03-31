@@ -1,0 +1,343 @@
+
+<style>
+:root { --gap: 20px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.page { padding: 24px 20px; font-family: var(--font-sans); }
+
+.article-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-card {
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background: var(--color-background-secondary);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card-header:hover {
+  background: var(--color-background-tertiary);
+}
+
+.type-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  flex: 1;
+}
+
+.card-meta {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.expand-icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.expand-icon svg { display: block; }
+
+.card-body {
+  display: none;
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--color-border-tertiary);
+}
+
+.card-body.open { display: block; }
+
+.outline-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 500px) {
+  .outline-sections { grid-template-columns: 1fr; }
+}
+
+.section-block {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+  padding: 12px 14px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.section-items {
+  list-style: none;
+}
+
+.section-items li {
+  font-size: 13px;
+  color: var(--color-text-primary);
+  padding: 3px 0;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.section-items li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--dot-color, var(--color-text-secondary));
+}
+
+.cta-box {
+  grid-column: 1 / -1;
+  background: var(--color-background-tertiary);
+  border-radius: var(--border-radius-md);
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.cta-box strong {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.full-width { grid-column: 1 / -1; }
+
+/* Color themes per type */
+.type-a .type-badge { background: #E6F1FB; color: #185FA5; }
+.type-a .section-block { --dot-color: #378ADD; }
+
+.type-b .type-badge { background: #E1F5EE; color: #0F6E56; }
+.type-b .section-block { --dot-color: #1D9E75; }
+
+.type-c .type-badge { background: #EEEDFE; color: #534AB7; }
+.type-c .section-block { --dot-color: #7F77DD; }
+
+.type-d .type-badge { background: #FAEEDA; color: #854F0B; }
+.type-d .section-block { --dot-color: #BA7517; }
+
+.type-e .type-badge { background: #FBEAF0; color: #993556; }
+.type-e .section-block { --dot-color: #D4537E; }
+
+@media (prefers-color-scheme: dark) {
+  .type-a .type-badge { background: #0C447C; color: #85B7EB; }
+  .type-b .type-badge { background: #085041; color: #5DCAA5; }
+  .type-c .type-badge { background: #3C3489; color: #AFA9EC; }
+  .type-d .type-badge { background: #633806; color: #EF9F27; }
+  .type-e .type-badge { background: #72243E; color: #ED93B1; }
+}
+</style>
+
+<div class="page">
+  <div class="article-grid" id="cards"></div>
+</div>
+
+<script>
+const articles = [
+  {
+    type: 'type-a',
+    badge: '定制指南型',
+    title: '非织造购物袋定制全流程指南',
+    meta: '字数建议 2000–2800字 · SEO长尾',
+    sections: [
+      {
+        label: '引言',
+        items: ['痛点切入：采购商常见困惑', '本文解决的核心问题', '作者资质背书（21年/9大基地）']
+      },
+      {
+        label: '核心内容',
+        items: ['材质选择对比表（克重/工艺/用途）', 'MOQ与起订量详解', '印刷工艺：丝印/热转印/数码对比', '版费说明与免版优惠条件']
+      },
+      {
+        label: '流程演示',
+        items: ['需求沟通 → 设计打样', '确认样品 → 批量生产', '质检报告 → 交期承诺', '包装出货 → 售后跟进']
+      },
+      {
+        label: '转化引导',
+        items: ['常见FAQ（5–8问）', '相关产品推荐链接', '在线询价表单', '联系方式+响应时效承诺']
+      }
+    ],
+    cta: '结构重点：嵌入「流程图」或「材质对比图」，增加样品申请按钮'
+  },
+  {
+    type: 'type-b',
+    badge: '案例研究型',
+    title: 'Disney × [品牌名] 联名环保袋定制案例',
+    meta: '字数建议 1500–2000字 · 信任背书',
+    sections: [
+      {
+        label: '客户背景',
+        items: ['客户行业与采购规模', '核心需求：IP联名/品牌主张', '项目时间节点要求']
+      },
+      {
+        label: '挑战与方案',
+        items: ['小批量高品质的平衡难题', '颜色还原度要求', '交期压缩解决方案', '认证合规（BSCI/ISO）']
+      },
+      {
+        label: '执行过程',
+        items: ['初稿设计稿展示', '打样3轮调整细节', '工厂实地验货流程', '成品对比：样品vs量产']
+      },
+      {
+        label: '成果数据',
+        items: ['交付数量与准时率', '客户复购情况', '市场反馈与销售数据', '客户引用评价（授权）']
+      }
+    ],
+    cta: '结构重点：真实高清图片为核心，嵌入客户视频评价更佳'
+  },
+  {
+    type: 'type-c',
+    badge: '痛点解答型',
+    title: '小批量订单如何保证质量一致性？',
+    meta: '字数建议 1200–1800字 · 信任建立',
+    sections: [
+      {
+        label: '问题定义',
+        items: ['小批量采购的3大核心顾虑', '数据：小批量vs大货质量差异率', '行业普遍做法的局限性']
+      },
+      {
+        label: '我们的答案',
+        items: ['专属品控团队配置', '16项专利工艺标准化', 'AQL抽检标准说明', '质检报告随单附送']
+      },
+      {
+        label: '常见追问',
+        items: ['交期延误的应对预案', '色差超标如何处理', '如何申请免费打样', '修改版型是否加收费用']
+      },
+      {
+        label: '转化引导',
+        items: ['申请免费样品', '查看质检报告模板', '联系专属客服', '查看相关成功案例']
+      }
+    ],
+    cta: '结构重点：直接用"问 → 答"对话格式，增强亲和力和可读性'
+  },
+  {
+    type: 'type-d',
+    badge: '行业科普型',
+    title: '可降解包装袋材料全解析：PLA vs PBAT vs纸袋',
+    meta: '字数建议 2000–3000字 · SEO权威',
+    sections: [
+      {
+        label: '背景与趋势',
+        items: ['全球限塑令政策梳理', '品牌方ESG合规压力', '采购商选材困惑现状']
+      },
+      {
+        label: '材料对比',
+        items: ['PLA：玉米淀粉基，堆肥条件', 'PBAT：柔韧性强，适合薄膜', '纸袋：可回收，承重局限', '非织造布：可复用，成本优势']
+      },
+      {
+        label: '选材决策',
+        items: ['按使用场景推荐对应材料', '认证标准：OK Compost/BPI对比', '成本区间参考（仅做量级参考）', '常见误区澄清']
+      },
+      {
+        label: '延伸内容',
+        items: ['我司可降解产品线介绍', '客户案例：零售/食品/电商', '获取环保材料样品册', '环保认证咨询入口']
+      }
+    ],
+    cta: '结构重点：图表驱动（对比表/雷达图），引用第三方认证机构数据增加权威性'
+  },
+  {
+    type: 'type-e',
+    badge: '供应链评估型',
+    title: '如何选择可靠的定制袋供应商？5个核心维度',
+    meta: '字数建议 1800–2500字 · 决策辅助',
+    sections: [
+      {
+        label: '评估框架',
+        items: ['维度1：生产规模与产能（年产5亿只）', '维度2：质量认证体系', '维度3：研发实力（16项专利）', '维度4：交期履约记录']
+      },
+      {
+        label: '验厂清单',
+        items: ['必问的10个问题', '工厂参观应看的关键环节', '样品验收标准模板', '合同条款红线清单']
+      },
+      {
+        label: '行业对比',
+        items: ['国内三类供应商优劣势', '外贸工厂vs贸易商对比', '9大基地的供应链优势', '全球交付与本地服务能力']
+      },
+      {
+        label: '行动引导',
+        items: ['下载验厂评分表（留资）', '预约工厂参观', '查看资质证书下载', '获取专属报价']
+      }
+    ],
+    cta: '结构重点：提供可下载的「验厂评分表」作为留资工具，高转化价值'
+  }
+];
+
+const container = document.getElementById('cards');
+
+articles.forEach((art, i) => {
+  const card = document.createElement('div');
+  card.className = `article-card ${art.type}`;
+
+  const sectionHTML = art.sections.map(sec => `
+    <div class="section-block">
+      <div class="section-label">${sec.label}</div>
+      <ul class="section-items">
+        ${sec.items.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+    </div>
+  `).join('');
+
+  card.innerHTML = `
+    <div class="card-header" onclick="toggle(this)">
+      <span class="type-badge">${art.badge}</span>
+      <span class="card-title">${art.title}</span>
+      <span class="card-meta">${art.meta}</span>
+      <span class="expand-icon">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </div>
+    <div class="card-body ${i === 0 ? 'open' : ''}">
+      <div class="outline-sections">
+        ${sectionHTML}
+        <div class="cta-box full-width"><strong>编辑提示：</strong>${art.cta}</div>
+      </div>
+    </div>
+  `;
+  container.appendChild(card);
+});
+
+function toggle(header) {
+  const body = header.nextElementSibling;
+  const icon = header.querySelector('.expand-icon');
+  const open = body.classList.toggle('open');
+  icon.style.transform = open ? 'rotate(180deg)' : '';
+}
+</script>

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(hainersteel-valves.com)"
+    ]
+  },
+  "$version": 3
+}

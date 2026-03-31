@@ -1,0 +1,50 @@
+{
+  "name": "Japanese-Knives",
+  "description": "日式刀具 SEO 提示词配置",
+  "prompt_template": "prompt.md",
+  
+  "variables": {
+    "brand_name": {
+      "description": "品牌名称",
+      "value": "Leeknives"
+    },
+    "company_info": {
+      "description": "公司信息",
+      "value": "Leading kitchen knife manufacturer since 2010"
+    },
+    "shipping_info": {
+      "description": "运输信息",
+      "value": "Fast worldwide shipping, free delivery on orders over $500"
+    },
+    "moq": {
+      "description": "最小起订量",
+      "value": "MOQ: 50 pieces"
+    },
+    "custom_services": {
+      "description": "定制服务",
+      "value": "OEM, ODM, private label, custom packaging, logo engraving available"
+    },
+    "certifications": {
+      "description": "认证信息",
+      "value": "FDA, LFGB, CE certified"
+    },
+    "sample_policy": {
+      "description": "样品政策",
+      "value": "Samples available, sample fee refundable on bulk orders"
+    },
+    "payment_terms": {
+      "description": "付款条件",
+      "value": "T/T, L/C, PayPal accepted"
+    },
+    "lead_time": {
+      "description": "交货时间",
+      "value": "15-25 days after order confirmation"
+    }
+  },
+  
+  "content_style": {
+    "tone": "professional",
+    "target_audience": "B2B wholesale",
+    "focus_points": ["quality", "craftsmanship"]
+  }
+}

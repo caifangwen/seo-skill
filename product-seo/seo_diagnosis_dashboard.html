@@ -1,0 +1,112 @@
+
+<style>
+.dash { padding: 16px 0; }
+.section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin: 20px 0 10px; }
+.metric-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.metric { flex: 1; min-width: 130px; background: var(--color-background-secondary); border-radius: 10px; padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary); }
+.metric-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 6px; }
+.metric-value { font-size: 22px; font-weight: 500; }
+.metric-sub { font-size: 11px; color: var(--color-text-tertiary); margin-top: 3px; }
+.red { color: #E24B4A; }
+.amber { color: #BA7517; }
+.green { color: #3B6D11; }
+.bar-wrap { background: var(--color-background-secondary); border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; border: 0.5px solid var(--color-border-tertiary); display: flex; align-items: center; gap: 12px; }
+.bar-label { font-size: 12px; color: var(--color-text-primary); width: 160px; flex-shrink: 0; }
+.bar-track { flex: 1; height: 8px; background: var(--color-border-tertiary); border-radius: 4px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; }
+.bar-pct { font-size: 12px; color: var(--color-text-secondary); width: 36px; text-align: right; flex-shrink: 0; }
+.cat-grid { display: flex; flex-direction: column; gap: 6px; }
+.cat-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--color-background-secondary); border-radius: 6px; border: 0.5px solid var(--color-border-tertiary); }
+.cat-name { font-size: 12px; color: var(--color-text-primary); }
+.cat-badge { font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+.badge-red { background: #FCEBEB; color: #A32D2D; }
+.badge-amber { background: #FAEEDA; color: #854F0B; }
+.priority-block { border-left: 3px solid; padding: 10px 14px; margin-bottom: 8px; border-radius: 0 6px 6px 0; background: var(--color-background-secondary); }
+.p1 { border-color: #E24B4A; }
+.p2 { border-color: #BA7517; }
+.p3 { border-color: #3B6D11; }
+.priority-tag { font-size: 11px; font-weight: 500; margin-bottom: 4px; }
+.priority-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+</style>
+
+<div class="dash">
+  <div class="section-title">内容完整度 — 674个产品</div>
+  <div class="metric-row">
+    <div class="metric">
+      <div class="metric-label">长描述 (Description)</div>
+      <div class="metric-value red">2%</div>
+      <div class="metric-sub">仅14个填写</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">SEO Title</div>
+      <div class="metric-value red">0%</div>
+      <div class="metric-sub">仅1个填写</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Meta Description</div>
+      <div class="metric-value red">0%</div>
+      <div class="metric-sub">列都不存在</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Focus Keyword</div>
+      <div class="metric-value amber">10%</div>
+      <div class="metric-sub">68个填写</div>
+    </div>
+  </div>
+  <div class="metric-row">
+    <div class="metric">
+      <div class="metric-label">短描述 (Short desc)</div>
+      <div class="metric-value amber">67%</div>
+      <div class="metric-sub">451个填写，但245个太短</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">三项全空产品</div>
+      <div class="metric-value red">222个</div>
+      <div class="metric-sub">短描述+长描述+关键词全无</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">图片</div>
+      <div class="metric-value green">99%</div>
+      <div class="metric-sub">669个有图</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">分类</div>
+      <div class="metric-value green">99%</div>
+      <div class="metric-sub">669个有分类</div>
+    </div>
+  </div>
+
+  <div class="section-title">字段填写率对比</div>
+  <div class="bar-wrap"><div class="bar-label">图片 Images</div><div class="bar-track"><div class="bar-fill" style="width:99%;background:#3B6D11"></div></div><div class="bar-pct">99%</div></div>
+  <div class="bar-wrap"><div class="bar-label">分类 Categories</div><div class="bar-track"><div class="bar-fill" style="width:99%;background:#3B6D11"></div></div><div class="bar-pct">99%</div></div>
+  <div class="bar-wrap"><div class="bar-label">短描述 Short desc</div><div class="bar-track"><div class="bar-fill" style="width:67%;background:#BA7517"></div></div><div class="bar-pct">67%</div></div>
+  <div class="bar-wrap"><div class="bar-label">Focus Keyword</div><div class="bar-track"><div class="bar-fill" style="width:10%;background:#E24B4A"></div></div><div class="bar-pct">10%</div></div>
+  <div class="bar-wrap"><div class="bar-label">长描述 Description</div><div class="bar-track"><div class="bar-fill" style="width:2%;background:#E24B4A"></div></div><div class="bar-pct">2%</div></div>
+  <div class="bar-wrap"><div class="bar-label">SEO Title</div><div class="bar-track"><div class="bar-fill" style="width:0.2%;background:#E24B4A"></div></div><div class="bar-pct">0%</div></div>
+  <div class="bar-wrap"><div class="bar-label">Meta Description</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#E24B4A"></div></div><div class="bar-pct">—</div></div>
+
+  <div class="section-title">描述缺失最严重的分类</div>
+  <div class="cat-grid">
+    <div class="cat-row"><div class="cat-name">Cookware > Pans</div><div class="cat-badge badge-red">缺38个 (100%)</div></div>
+    <div class="cat-row"><div class="cat-name">Cookware > Pots</div><div class="cat-badge badge-red">缺36个 (97%)</div></div>
+    <div class="cat-row"><div class="cat-name">Utensils</div><div class="cat-badge badge-red">缺33个 (100%)</div></div>
+    <div class="cat-row"><div class="cat-name">Axes</div><div class="cat-badge badge-red">缺28个 (68%)</div></div>
+    <div class="cat-row"><div class="cat-name">Cookware > Grills & Griddles</div><div class="cat-badge badge-red">缺22个 (100%)</div></div>
+    <div class="cat-row"><div class="cat-name">Knife Accessories > Knife Storage</div><div class="cat-badge badge-amber">缺20个 (100%)</div></div>
+    <div class="cat-row"><div class="cat-name">Knife Accessories > Honing Steels</div><div class="cat-badge badge-amber">缺10个 (56%)</div></div>
+  </div>
+
+  <div class="section-title">优先处理建议</div>
+  <div class="priority-block p1">
+    <div class="priority-tag red">P1 — 立刻做</div>
+    <div class="priority-desc">222个三项全空的产品，先补短描述+关键词。这批产品对搜索引擎几乎不可见。</div>
+  </div>
+  <div class="priority-block p2">
+    <div class="priority-tag amber">P2 — 本周内</div>
+    <div class="priority-desc">674个产品全部补 SEO Title + Meta Description，这两项是点击率直接相关的字段，现在几乎为零。</div>
+  </div>
+  <div class="priority-block p3">
+    <div class="priority-tag green">P3 — 持续推进</div>
+    <div class="priority-desc">660个缺长描述的产品，按分类分批用AI生成，优先从流量价值高的刀具类开始。</div>
+  </div>
+</div>

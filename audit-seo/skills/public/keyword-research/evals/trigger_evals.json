@@ -1,0 +1,16 @@
+{
+  "skill_name": "keyword-research",
+  "description": "测试触发描述的准确性，确保正确触发且不误触发",
+  "evals": [
+    { "prompt": "帮我做关键词研究", "should_trigger": true },
+    { "prompt": "帮我挖掘一些长尾关键词", "should_trigger": true },
+    { "prompt": "分析一下这些搜索词的意图", "should_trigger": true },
+    { "prompt": "扩展一下我的关键词词库", "should_trigger": true },
+    { "prompt": "竞品都在排名哪些关键词", "should_trigger": true },
+    { "prompt": "帮我找 SEO 相关的搜索词", "should_trigger": true },
+    { "prompt": "帮我写一篇关于关键词研究的文章", "should_trigger": false },
+    { "prompt": "总结一下这篇文章的内容", "should_trigger": false },
+    { "prompt": "优化这篇文章的 SEO", "should_trigger": false },
+    { "prompt": "检查网站的技术问题", "should_trigger": false }
+  ]
+}

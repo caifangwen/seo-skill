@@ -1,0 +1,812 @@
+[
+  {
+    "topic": "other",
+    "keyword": "kangaroo",
+    "search_volume": 110000,
+    "difficulty": 61.0,
+    "priority_score": 1239.44,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "other",
+    "keyword": "kookaburra",
+    "search_volume": 40500,
+    "difficulty": 50.0,
+    "priority_score": 1012.5,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "other",
+    "keyword": "miyabi",
+    "search_volume": 33100,
+    "difficulty": 51.0,
+    "priority_score": 651.15,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "other",
+    "keyword": "se ax",
+    "search_volume": 2900,
+    "difficulty": 9.0,
+    "priority_score": 638.76,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "other",
+    "keyword": "types of knives",
+    "search_volume": 8100,
+    "difficulty": 27.0,
+    "priority_score": 614.07,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "other",
+    "keyword": "knives kinds",
+    "search_volume": 4400,
+    "difficulty": 27.0,
+    "priority_score": 522.65,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "other",
+    "keyword": "ebony wood",
+    "search_volume": 9900,
+    "difficulty": 25.0,
+    "priority_score": 424.29,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "other",
+    "keyword": "steak knives",
+    "search_volume": 9900,
+    "difficulty": 18.0,
+    "priority_score": 424.29,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "other",
+    "keyword": "different types of knives",
+    "search_volume": 2400,
+    "difficulty": 9.0,
+    "priority_score": 377.05,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "other",
+    "keyword": "kukri",
+    "search_volume": 14800,
+    "difficulty": 26.0,
+    "priority_score": 342.04,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "blades",
+    "search_volume": 14800,
+    "difficulty": 38.0,
+    "priority_score": 975.88,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "butcher knife",
+    "search_volume": 18100,
+    "difficulty": 23.0,
+    "priority_score": 822.73,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "boning knife",
+    "search_volume": 12100,
+    "difficulty": 17.0,
+    "priority_score": 537.78,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "types of swords",
+    "search_volume": 12100,
+    "difficulty": 21.0,
+    "priority_score": 530.84,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "when must a knife be cleaned and sanitized",
+    "search_volume": 2900,
+    "difficulty": 2.0,
+    "priority_score": 472.7,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "daggers",
+    "search_volume": 9900,
+    "difficulty": 23.0,
+    "priority_score": 435.6,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "gravity knife",
+    "search_volume": 14800,
+    "difficulty": 44.0,
+    "priority_score": 430.84,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "dagger meaning",
+    "search_volume": 14800,
+    "difficulty": 55.0,
+    "priority_score": 396.18,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "knife types",
+    "search_volume": 2900,
+    "difficulty": 23.0,
+    "priority_score": 379.64,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_types",
+    "keyword": "ww1 trench knife",
+    "search_volume": 2400,
+    "difficulty": 11.0,
+    "priority_score": 341.14,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "pocket knives",
+    "search_volume": 14800,
+    "difficulty": 33.0,
+    "priority_score": 413.02,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "hunting knives",
+    "search_volume": 5400,
+    "difficulty": 27.0,
+    "priority_score": 316.99,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "brading a pocket knive lanyard",
+    "search_volume": 1900,
+    "difficulty": 0.0,
+    "priority_score": 248.52,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "types of pocket knives",
+    "search_volume": 1300,
+    "difficulty": 14.0,
+    "priority_score": 124.31,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "edc knives",
+    "search_volume": 2900,
+    "difficulty": 21.0,
+    "priority_score": 112.26,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "types of pocket knives",
+    "search_volume": 1300,
+    "difficulty": 14.0,
+    "priority_score": 43.33,
+    "content_type": "List Post",
+    "competitor": "insight"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "edc beads",
+    "search_volume": 320,
+    "difficulty": 0.0,
+    "priority_score": 41.09,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "best hunting knives",
+    "search_volume": 1300,
+    "difficulty": 25.0,
+    "priority_score": 29.71,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "pocket nifes",
+    "search_volume": 880,
+    "difficulty": 48.0,
+    "priority_score": 18.21,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "outdoor",
+    "keyword": "types of hunting knives",
+    "search_volume": 320,
+    "difficulty": 10.0,
+    "priority_score": 16.0,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "chef knives",
+    "search_volume": 9900,
+    "difficulty": 40.0,
+    "priority_score": 297.0,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "barramundi fish",
+    "search_volume": 6600,
+    "difficulty": 34.0,
+    "priority_score": 225.0,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "meat clever",
+    "search_volume": 1300,
+    "difficulty": 23.0,
+    "priority_score": 59.09,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "small knives kitchen",
+    "search_volume": 1600,
+    "difficulty": 13.0,
+    "priority_score": 55.65,
+    "content_type": "Informational Post",
+    "competitor": "insight"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "types of japanese cooking knives",
+    "search_volume": 880,
+    "difficulty": 4.0,
+    "priority_score": 50.29,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "types of japanese cooking knives",
+    "search_volume": 880,
+    "difficulty": 4.0,
+    "priority_score": 50.29,
+    "content_type": "List Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "kitchen cutlery",
+    "search_volume": 2400,
+    "difficulty": 50.0,
+    "priority_score": 48.0,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "best kitchen knives set",
+    "search_volume": 2900,
+    "difficulty": 40.0,
+    "priority_score": 46.4,
+    "content_type": "List Post",
+    "competitor": "insight"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "best japanese kitchen knives",
+    "search_volume": 1900,
+    "difficulty": 25.0,
+    "priority_score": 43.43,
+    "content_type": "List Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "cooking",
+    "keyword": "best professional kitchen knives",
+    "search_volume": 480,
+    "difficulty": 0.0,
+    "priority_score": 38.4,
+    "content_type": "List Post",
+    "competitor": "insight"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "paracord keychain",
+    "search_volume": 4400,
+    "difficulty": 26.0,
+    "priority_score": 271.33,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "paracord beads",
+    "search_volume": 880,
+    "difficulty": 0.0,
+    "priority_score": 133.06,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "yarborough",
+    "search_volume": 4400,
+    "difficulty": 44.0,
+    "priority_score": 113.42,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "bird lorikeet",
+    "search_volume": 1000,
+    "difficulty": 0.0,
+    "priority_score": 100.0,
+    "content_type": "Comparison",
+    "competitor": "koi"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "cowboy accessories",
+    "search_volume": 1300,
+    "difficulty": 9.0,
+    "priority_score": 82.11,
+    "content_type": "Comparison",
+    "competitor": "koi"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "is it dangerous to have scissors in your pocket",
+    "search_volume": 2400,
+    "difficulty": 18.0,
+    "priority_score": 68.57,
+    "content_type": "Comparison",
+    "competitor": "insight"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "yarborough knives",
+    "search_volume": 480,
+    "difficulty": 5.0,
+    "priority_score": 66.72,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "rainbow lorikeet species",
+    "search_volume": 2900,
+    "difficulty": 45.0,
+    "priority_score": 53.78,
+    "content_type": "Comparison",
+    "competitor": "koi"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "usuba vs nakiri",
+    "search_volume": 480,
+    "difficulty": 1.0,
+    "priority_score": 52.89,
+    "content_type": "Comparison",
+    "competitor": "koi"
+  },
+  {
+    "topic": "comparison",
+    "keyword": "550 paracord diameter",
+    "search_volume": 590,
+    "difficulty": 12.0,
+    "priority_score": 50.28,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "d2 steel",
+    "search_volume": 4400,
+    "difficulty": 13.0,
+    "priority_score": 259.41,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "damascus blade",
+    "search_volume": 2400,
+    "difficulty": 13.0,
+    "priority_score": 197.22,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "m390 steel",
+    "search_volume": 2400,
+    "difficulty": 8.0,
+    "priority_score": 176.0,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "damascus knife damascus",
+    "search_volume": 5400,
+    "difficulty": 15.0,
+    "priority_score": 172.8,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "damascus steel knife set",
+    "search_volume": 1600,
+    "difficulty": 5.0,
+    "priority_score": 160.0,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "d2 steel",
+    "search_volume": 4400,
+    "difficulty": 13.0,
+    "priority_score": 157.63,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "d2 steel",
+    "search_volume": 4400,
+    "difficulty": 13.0,
+    "priority_score": 153.04,
+    "content_type": "Informational Post",
+    "competitor": "shieldon"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "8cr13mov",
+    "search_volume": 1900,
+    "difficulty": 7.0,
+    "priority_score": 151.55,
+    "content_type": "Informational Post",
+    "competitor": "zhangxiaoquan"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "what is steel made of",
+    "search_volume": 6600,
+    "difficulty": 25.0,
+    "priority_score": 150.86,
+    "content_type": "Informational Post",
+    "competitor": "zhangxiaoquan"
+  },
+  {
+    "topic": "steel_types",
+    "keyword": "aus 8 steel",
+    "search_volume": 1300,
+    "difficulty": 9.0,
+    "priority_score": 145.74,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "how to sharpen kitchen knives",
+    "search_volume": 9900,
+    "difficulty": 45.0,
+    "priority_score": 144.0,
+    "content_type": "How-to Tutorial",
+    "competitor": "insight"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "diamond whetstone sharpening stone",
+    "search_volume": 1900,
+    "difficulty": 6.0,
+    "priority_score": 95.95,
+    "content_type": "How-to Tutorial",
+    "competitor": "koi"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "how to sharpen a machete",
+    "search_volume": 720,
+    "difficulty": 6.0,
+    "priority_score": 70.2,
+    "content_type": "How-to Tutorial",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "sharpening japanese knives",
+    "search_volume": 590,
+    "difficulty": 13.0,
+    "priority_score": 40.4,
+    "content_type": "How-to Tutorial",
+    "competitor": "koi"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "how to get rust off knives",
+    "search_volume": 880,
+    "difficulty": 8.0,
+    "priority_score": 39.11,
+    "content_type": "How-to Tutorial",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "how to get rust off of knives",
+    "search_volume": 720,
+    "difficulty": 5.0,
+    "priority_score": 38.4,
+    "content_type": "How-to Tutorial",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "machete sharpener",
+    "search_volume": 390,
+    "difficulty": 7.0,
+    "priority_score": 35.79,
+    "content_type": "How-to Tutorial",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "how to sharpen japanese kitchen knives",
+    "search_volume": 210,
+    "difficulty": 0.0,
+    "priority_score": 33.08,
+    "content_type": "How-to Tutorial",
+    "competitor": "koi"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "what angle to sharpen kitchen knives",
+    "search_volume": 390,
+    "difficulty": 11.0,
+    "priority_score": 32.59,
+    "content_type": "How-to Tutorial",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "maintenance",
+    "keyword": "best rated sharpening stones",
+    "search_volume": 390,
+    "difficulty": 0.0,
+    "priority_score": 31.2,
+    "content_type": "How-to Tutorial",
+    "competitor": "insight"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "why are butterfly knives illegal",
+    "search_volume": 2900,
+    "difficulty": 11.0,
+    "priority_score": 112.69,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "why are butterfly knives illegal",
+    "search_volume": 2900,
+    "difficulty": 11.0,
+    "priority_score": 110.48,
+    "content_type": "Informational Post",
+    "competitor": "shieldon"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "are butterfly knives illegal",
+    "search_volume": 2400,
+    "difficulty": 13.0,
+    "priority_score": 107.48,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "can you have dummy otf knives in california",
+    "search_volume": 1000,
+    "difficulty": 0.0,
+    "priority_score": 80.0,
+    "content_type": "Comparison",
+    "competitor": "shieldon"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "concealed carry knife",
+    "search_volume": 1300,
+    "difficulty": 20.0,
+    "priority_score": 79.3,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "new york knife laws",
+    "search_volume": 1300,
+    "difficulty": 8.0,
+    "priority_score": 72.94,
+    "content_type": "Comparison",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "claw knife",
+    "search_volume": 1000,
+    "difficulty": 12.0,
+    "priority_score": 68.18,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "are balisongs legal in texas",
+    "search_volume": 590,
+    "difficulty": 0.0,
+    "priority_score": 59.59,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "are switchblades illegal",
+    "search_volume": 1300,
+    "difficulty": 18.0,
+    "priority_score": 59.06,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "knife_laws",
+    "keyword": "why balisongs are illegal",
+    "search_volume": 720,
+    "difficulty": 3.0,
+    "priority_score": 55.94,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "viking knives",
+    "search_volume": 1000,
+    "difficulty": 19.0,
+    "priority_score": 42.62,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "viking seax",
+    "search_volume": 880,
+    "difficulty": 20.0,
+    "priority_score": 37.31,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "ww1 trench knives",
+    "search_volume": 320,
+    "difficulty": 6.0,
+    "priority_score": 33.9,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "ww1 trench spike",
+    "search_volume": 480,
+    "difficulty": 20.0,
+    "priority_score": 28.56,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "ww1 knives",
+    "search_volume": 320,
+    "difficulty": 9.0,
+    "priority_score": 28.55,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "trench knives ww1",
+    "search_volume": 390,
+    "difficulty": 20.0,
+    "priority_score": 20.48,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "medieval knives",
+    "search_volume": 390,
+    "difficulty": 13.0,
+    "priority_score": 17.13,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "ancient knives",
+    "search_volume": 170,
+    "difficulty": 2.0,
+    "priority_score": 14.17,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "ancient mayan weapons",
+    "search_volume": 480,
+    "difficulty": 22.0,
+    "priority_score": 12.0,
+    "content_type": "Informational Post",
+    "competitor": "noblie"
+  },
+  {
+    "topic": "historical",
+    "keyword": "ancient knives",
+    "search_volume": 170,
+    "difficulty": 2.0,
+    "priority_score": 11.33,
+    "content_type": "Informational Post",
+    "competitor": "koi"
+  }
+]
